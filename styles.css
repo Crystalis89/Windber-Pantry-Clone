@@ -230,6 +230,16 @@ footer a {
 
     .hero__content {
         padding: 1rem 0;
+        position: relative;
+    }
+
+    .hero__text {
+        padding: 2rem 2rem;
+        position: absolute;
+        z-index: 2;
+        bottom: 10rem;
+        right: 4rem;
+        border-radius: 15px;
     }
 
     .hoursimage {
