@@ -4,31 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Windber Area Community Kitchen - Contact Us</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
-    <header>
-      <div>
-        <a id="logo" href="index.html"><img src="Assets/Logo.jpg" alt="Logo for Winder Food Pantry" style="height: 75px; width: 75px;;">          <h1>Winbder Pantry Packs</h1>
-        </a>
-         </div>        
-         <nav class="navlinks">
-          <a href="What-We-Do.html">What We Do</a>
-          <a href="Get-Involved.html">Get Involved</a>
-          <a href="Ways-To-Give.html">Ways to Give</a>
-          <a href="How-To-Reach.html">How to Reach Us</a>          
-          <a href="Ways-To-Give.html#paypal"><button>Donate</button></a> 
-        </nav>
-      
+  <header>
+    <!-- <a id="logo" href="index.html"><section style="width: 75px; height: 75px; outline: solid black;">Logo</section></a> -->
+     <section>
+    <a id="logo" href="index.html"><img src="Assets/favicon.ico" alt="Logo for Winder Food Pantry">          <h1>Winbder Pantry Packs</h1>
+    </a>
+     </section>
+    <nav class="navlinks">
+      <a href="What-We-Do.html">What We Do</a>
+      <a href="Get-Involved.html">Get Involved</a>
+      <a href="Ways-To-Give.html">Ways to Give</a>
+      <a href="How-To-Reach.html">How to Reach Us</a>          
+      <a href="Ways-To-Give.html#paypal" class="donate">Donate</a> 
 
-    </header>
-    <div id="header-placeholder"></div>
-<div class="contactcontainer">
-        <img src="Assets/pantry hours.jpg" alt="Hours 1st & 3rd Tuesday every Month
+      <button class="header__hamburger"><img src="Assets/Icons/icon-hamburger.svg" alt="Open Sidebar navigation"></button>
+
+    </nav>
+  
+
+</header>
+<section class="sidebar">
+  <button class="sidebar__closebutton"><img src="assets/Icons/icon-close.svg" alt="Close Menu"></button>
+
+  <nav class="sidebar__nav">
+    <a href="What-We-Do.html">What We Do</a>
+    <a href="Get-Involved.html">Get Involved</a>
+    <a href="Ways-To-Give.html">Ways to Give</a>
+    <a href="How-To-Reach.html">How to Reach Us</a>          
+    <a href="Ways-To-Give.html#paypal" class="donate">Donate</a>       
+  </nav>
+
+</section>
+
+
+<main class="contactcontainer">
+        <img class="hoursimage" src="Assets/pantry hours.jpg" alt="Hours 1st & 3rd Tuesday every Month
         8:30 AM - 11:30 AM " class="hoursimage">
     
-        <div class="contactinfo">
+        <section class="contactinfo">
           <h1>Contact Us</h1>
           <p>
             <b> Hours: <br>
@@ -37,6 +55,8 @@
             <br>
 
           Address:
+          <br>
+
             Windber Food Pantry <br>
             401 22nd Street <br>
             P.O. Box 332 Windber, PA 15963 <br>
@@ -47,7 +67,7 @@
           Email  <a href="mailto:windberfoodpantry@gmail.com">windberfoodpantry@gmail.com</a></b>
           </p>
 
-          <div class="contactsocial">
+          <section class="contactsocial">
             <h2>Connect on Social</h2>
             <div class="socialicons">
               <a href="https://www.facebook.com/p/Windber-Food-Pantry-61554223321474/"><img src="Assets/Icons/facebook.svg" alt="Facebook Button" class="icons"></a>
@@ -55,30 +75,47 @@
               <!-- <a href="https://www.linkedin.com/company/windberkitchen"><img src="Assets/Icons/linkedin.svg" alt="LinkedIn Button" class="icons"></a> -->
               <!-- <img src="Assets/Icons/instagram.svg" alt="" class="icons"> -->
             </div>
-            </div>
-        </div>
+          </section>
+        </section>
    
           <div class="map">
             <label for="maplink">Click map to be taken there on Google Maps</label>
             <a class="maplink" href="https://www.google.com/maps/place/401+22nd+St,+Windber,+PA+15963/@40.2302862,-78.8273215,18.21z/data=!4m10!1m2!2m1!1s401+22nd+Street+P.O.+Box+332+Windber,+PA+15963!3m6!1s0x89cb0539f7289e61:0x6a4223207ba2cba6!8m2!3d40.2303514!4d-78.8260675!15sCi40MDEgMjJuZCBTdHJlZXQgUC5PLiBCb3ggMzMyIFdpbmRiZXIsIFBBIDE1OTYzkgERY29tcG91bmRfYnVpbGRpbmfgAQA!16s%2Fg%2F11crvg33yz?entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D">
             <img src="Assets/googlemap.png" alt="Google Map showing location, click to open Google Maps." srcset=""></a>
         </div>
-        <footer>
-          <nav class="navlinks">
-                    <a href="index.html">Home</a>
-                    <a href="What-We-Do.html">What We Do</a>
-                    <a href="Get-Involved.html">Get Involved</a>
-                    <a href="Ways-To-Give.html">Ways to Give</a>
-                    <a href="How-To-Reach.html">How To Reach Us</a>
-                    <!-- Maybe have this page contain the blog, facebook, google calendar, ect -->
-                    <a href="">Events</a>
-                    <a href="Ways-To-Give.html#paypal"><button>Donate</button></a> 
+      
+      </main>
+      <footer id="footer"> 
+    
+     
 
+        <section class="rightfooter">
+        
+        <nav class="navlinks">
+          <a href="index.html">Home</a>
+          <a href="What-We-Do.html">What We Do</a>
+          <a href="Get-Involved.html">Get Involved</a>
+          <a href="Ways-To-Give.html">Ways to Give</a>
+          <a href="How-To-Reach.html">How to Reach Us</a>          
+          <!-- Maybe have this page contain the blog, facebook, google calendar, ect -->
+          <!-- <a href="">Events</a> -->
+           <section class="donate">
+          <a href="Ways-To-Give.html#paypal" >Donate</a> 
+           </section>
+      </nav>
 
-          </nav>
-          <h4>Copyright © 2024. All rights reserved.</h4>
-
-          </footer>
-</div>
+      <section>
+        <h3>Connect on Social</h3>
+        <section class="socialicons">
+          
+          <a href="https://www.facebook.com/p/Windber-Food-Pantry-61554223321474/"><img src="Assets/Icons/facebook.svg" alt="Facebook Button" class="icons"></a>
+          <!-- <img src="Assets/Icons/twitter.svg" alt="" class="icons"> -->
+          <!-- <a href="https://www.linkedin.com/company/windberkitchen"><img src="Assets/Icons/linkedin.svg" alt="LinkedIn Button" class="icons"></a> -->
+          <!-- <img src="Assets/Icons/instagram.svg" alt="" class="icons"> -->
+        </section>
+        <h4>Copyright © 2024. All rights reserved.</h4>
+      </section>
+        </section>
+    </footer>
  
 </body>

@@ -1,194 +1,193 @@
-/* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  /* 2. Remove default margin */
-  * {
-    margin: 0;
-    text-decoration: none;
-  }
-  body {
-    /* 3. Add accessible line-height */
-    line-height: 1.5;
-    /* 4. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
-  }
-  /* 5. Improve media defaults */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  /* 6. Inherit fonts for form controls */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  /* 7. Avoid text overflows */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  /* 8. Improve line wrapping */
-  p {
-    text-wrap: pretty;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
-  }
-  /*
-    9. Create a root stacking context
-  */
-  #root, #__next {
-    isolation: isolate;
-  }
 
-  #header-placeholder {
-    height: 7rem; 
-    transition: height 0.4s ease;
+body {
+    margin: 0;
+    font-size: 1.25rem;
 }
 
-button {
-    background-color: #283F0C;
-    color: white;
-    border-radius: 15px;
-
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
 }
 
 img {
-    border-radius: 15px;
-
-}
-header {
-    height: 7rem;
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 25px 10px;
-    transition: padding 0.4s ease, background-color 0.4s ease, height 0.4s ease;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 3;
-    font-weight:bolder;
-    font-size: large;
-    align-items: center;
+    margin: 1rem auto;
 }
 
+a {
+    border-radius: 10px;
+    font-weight: 600;
+    color: #283F0C;
+}
+
+  #header-placeholder {
+    height: 6rem; 
+    transition: height 0.4s ease;
+}
+
+.green {
+    background-color: #283F0C;
+    color: white;
+}
 
 #logo {
-    margin-left: 3rem;
-    transition: font-size 0.4s ease;
-    font-size: 15px;
     display: flex;
     gap: 1rem;
-    align-items: center;
+}
+
+#logo h1 {
+    font-size: 1.5rem;
+    width: 6rem;
+    margin: auto;
+}
+
+.donate {
+        background-color: #283F0C;
+        border-radius: 20px;
+        width: 7rem;
+        margin: auto;
+        color: white;
+        text-align: center;
+}
+
+.navlinks {
+    display: flex;
+    gap: .35rem;
 }
 
 .navlinks a {
-    padding: 10px;
+    display: none;
 }
 
-.hero-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 40rem;
-    width: auto;
-align-items: center;
-}
-
-.heroimage {
-    grid-column: 1 / 3;
-    z-index: 1; 
-    grid-row: 1/2;
-    height: 600px;
-    width: 100%;
-
-}
-
-.imageplaceholder {
-    background-color: navy;
-
-}
-.hero-content div {
-    grid-column: 2 / 3;
-    z-index: 2; 
-    grid-row: 1/2;
+.header__hamburger {
+    border: none;
     background-color: white;
-    border-radius: 15px;
-    background-color: #283F0C;
-    color: white;
-    padding: 1rem;
-    margin-right: 3rem;
 }
 
+.header__hamburger img {
+    width: 2rem;
+}
+
+.sidebar {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #283F0C;
+    align-items: center;
+    top: 0;
+    font-size: 1.5rem;
+}
+
+.sidebar__nav {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.sidebar a {
+    color: white;
+    font-weight: 600;
+}
+
+.sidebar__closebutton {
+        background-color: #283F0C;
+        border: none;
+        padding: 2rem;
+}
+
+.hero__content {
+    padding: 0 0;
+    text-align: center;
+}
+
+
+.hero__text {
+    padding: 1rem 0;
+}
+
+.hero__text h1 {
+    margin-top: 0;
+}
+
+.hero__joinus {
+    background-color: white;
+    color: #283F0C;
+    width: 13rem;
+    border-radius: 15px;
+    margin: 1rem auto 0rem auto;
+}
+
+.learnmore {
+    width: 12rem;
+    border-radius: 15px;
+    margin: 1rem auto;
+}
 
 .whatwedo {
-    display: flex;
-    width: 100%; 
+
+
 }
 
-.whatwedo img {
-    margin:auto;
-    max-width: 100%;
+.whatwedo section {
+    margin: 0rem 2rem;
+    text-align: center;
 }
-
-
-
-.whatwedo div {
-    width: 50%;
-}
-
 
 .calltoaction {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5rem;
-}
-
-.calltoaction div {
-    display: flex;
-}
-
-.calltoaction div div {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
+    text-align: center;
 }
 
 .foodfinder {
-    width:  auto;
-    background-color: #283F0C;
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
+    text-align: center;
+    padding: 1rem 0;
 }
 
-.foodfinder button, .hero-content button {
-    background-color: white;
-    color: #283F0C;
-    box-shadow: 2px 1px 1px lightgray;
+/* How To Reach */
+.contactcontainer {
+    text-align: center;
 }
+
 
 footer {
     display: flex;
     justify-content: space-around;
-    padding: 2rem;
+    padding: 1rem;
     background-color: #1D1D1D;
     color: white;
     width: 100%;
+    gap: 15px;
+}
+
+.leftfooter {
+    width: 50%;
 }
 
 .rightfooter {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
+}
+
+.rightfooter .navlinks {
+    flex-direction: column;
+}
+
+.rightfooter .navlinks a {
+    display: block;
+    margin-right: 0;
 }
 footer a {
+    /* display: block; */
     color: white;
     font-weight: bold;
 }
+
 .socialicons {
     display: flex;
     fill: white;
@@ -200,59 +199,42 @@ footer a {
     width: 30px;
 }
 
+@media only screen and (min-width: 800px) { 
+    .navlinks {
+        display: flex;
+        gap: 1rem;
+        font-size: 1.5rem;
+    }
 
-.contactcontainer {
-    display: grid;
-    grid-template-areas: 
-        'hours hours'
-        'address map'
-        'footer footer';
+    .navlinks a {
+        display: block;
+        margin-right: 1rem;
 
-    align-items: center;
-    margin-top: 10px;
-}
+    }
 
-.hoursimage {
-    grid-area: hours;
-    height: 25rem;
-    width: 100%;
+    .navlinks a:hover:not(.hover) {
+        box-shadow: -1px 5px 0px -1px #283F0C;
+        border-radius: 0;    
+    }
 
-}
-
-.map img {
-    margin: auto;
-}
-
-.contactinfo {
-    grid-area: address;
-    margin: auto;
-}
-
-.contactsocial .socialicons {
-    grid-area: social;
-    filter: invert(0);    
-
-}
-
-.map {
-    grid-area: map;
-    width: 100%;
-    height: 25rem;
-    /* background-color: #283F0C; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-weight: bolder;
-}
-
-.contactcontainer footer {
-    grid-area: footer;
-}
-
-/* @media (prefers-color-scheme: dark) {
-    body {
-        background-color: black;
+    .hover:hover {
+        background-color: #8a2300;
+        border-radius: 20px;
         color: white;
-      }
-} */
+
+    }
+
+    .header__hamburger {
+    display: none;
+    }
+
+    .hero__content {
+        padding: 1rem 0;
+    }
+
+    .hoursimage {
+        width: 60vw;
+    }
+
+}
+
